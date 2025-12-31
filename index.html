@@ -741,16 +741,7 @@
                         <p class="reel-description">${item.description}</p>
                     </div>
                     
-                    <div class="reel-footer">
-                        ${index < timelineData.length - 1 ? `
-                            <div class="scroll-hint">
-                                <span>Swipe up for next</span>
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                                </svg>
-                            </div>
-                        ` : ''}
-                    </div>
+
                 `;
                 
                 reelsContainer.appendChild(reel);
@@ -767,7 +758,6 @@
                 
                 <div class="reel-content">
                     <div class="countdown-container">
-                        <div class="current-time" id="currentTime"></div>
                         <h2 class="countdown-title">Countdown to New Year 2026</h2>
                         <div class="target-date">December 31, 2025, 12:00 AM</div>
                         
@@ -789,13 +779,7 @@
                                 <div class="countdown-label">Seconds</div>
                             </div>
                         </div>
-                        
-                        <div class="countdown-progress">
-                            <div class="progress-bar" id="countdownProgress"></div>
-                        </div>
-                        
-                        <div class="countdown-stats" id="countdownStats"></div>
-                        
+
                         <div class="new-year-message" id="newYearMessage">
                             🎉 Happy New Year 2026! 🎉
                         </div>
